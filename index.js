@@ -82,7 +82,7 @@ module.exports = class REPL extends Trailpack {
       this.server.context.options = lib.Http.options.bind(lib.Http)
     }
     else {
-      this.log.warn('REPL not started because environment not allow them, set config.repl.allowNoTTY=true to force')
+      this.log.warn('REPL did not start because this environment by default does not allow TTY, set config.repl.allowNoTTY=true to force start REPL')
     }
   }
 
